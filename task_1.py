@@ -29,12 +29,9 @@ class ExtendedCase(Case):
         super().__init__(test_case_id, name, step_description, expected_result)
 
     def print_test_case_info(self):
+        super().print_test_case_info()
         print(
-            f"ID тест-кейса:  {self.test_case_id}"
-            f"\nНазвание: {self.name}"
-            f"\nОписание шага: {self.step_description}"
-            f"\nОжидаемый результат: {self.expected_result}"
-            f"\nПредусловие: {self.precondition}"
+            f"Предусловие: {self.precondition}"
             f"\nОжидаемый результат: {self.expected_result}"
         )
 
